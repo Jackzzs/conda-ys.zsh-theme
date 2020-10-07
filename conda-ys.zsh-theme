@@ -67,7 +67,7 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 # $
 PROMPT="
 %{$terminfo[bold]$fg[blue]%}#%{$reset_color%} \
-%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]% ${USER}) \
+%(#,%{$bg[yellow]%}%{$fg[black]%}%n%{$reset_color%},%{$fg[cyan]% ${SBU_USER:-$USER}) \
 %{$fg[white]%}@ \
 %{$fg[green]%}${conda_info}\
 %{$fg[green]%}${virtualenv_info}\
